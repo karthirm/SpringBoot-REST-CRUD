@@ -4,7 +4,6 @@ import com.learning.springboot.entity.User;
 
 import java.util.List;
 
-
 public interface UserService {
      User createUser(User user);
 
@@ -13,6 +12,5 @@ public interface UserService {
      List<User> getAllUsers();
 
      User updateUser(User user);
-
      void deleteUser(Long userId);
 }

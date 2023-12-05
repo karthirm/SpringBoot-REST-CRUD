@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
@@ -25,7 +24,6 @@ public class UserServiceImpl implements UserService {
         Optional<User> user = userRepository.findById(userId);
         return user.get();
     }
-
     @Override
     public List<User> getAllUsers() {
         return userRepository.findAll();

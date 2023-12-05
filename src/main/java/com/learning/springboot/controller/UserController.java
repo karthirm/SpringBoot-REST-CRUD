@@ -44,7 +44,6 @@ public class UserController {
         public ResponseEntity<String> deleteUser(@PathVariable Long id){
             userService.deleteUser(id);
             return new ResponseEntity<>("user deleted" , HttpStatus.CREATED);
-
      }
 }
 
